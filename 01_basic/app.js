@@ -1,5 +1,7 @@
-require("./xyz");
-const { x, calculateSum } = require("./sum");
+// require("./xyz");
+// const { x, calculateSum } = require("./sum");
+
+import {calculateSum, x} from "./sum.js"
 
 console.log("Executing App")
 
