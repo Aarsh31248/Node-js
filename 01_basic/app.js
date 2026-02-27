@@ -1,14 +1,16 @@
 // require("./xyz");
-// const { x, calculateSum } = require("./sum");
+// import {calculateSum, x} from "./calculate/sum.js"
 
-import {calculateSum, x} from "./sum.js"
+const { calculateSum, calculateMultiply } = require("./calculate/index");
 
-console.log("Executing App")
+console.log("Executing App");
 
 let a = 10;
 let b = 20;
 
 calculateSum(a, b);
-console.log("Name :", x);
+calculateMultiply(a, b);
+
+// console.log("Name :", x);
 
 console.log(global === globalThis);
